@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  box-sizing: border-box;
+  font-family: Gilroy;
+  color: #fff;
+}
+
+html, body{
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+}
+
+.card{
+  height: 20vh;
+  width: 90%;
+  background-color: crimson;
+  border-radius: 10px;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2vh;
+}
+
+.navbar{
+  padding: 2vh;
+  background-color: rgb(241, 141, 158);
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  background-color: transparent;
+}
+
+.navbar ul li{
+  list-style: none;
+  background-color: transparent;
+}
