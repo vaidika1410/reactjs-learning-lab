@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+
+html, body{
+  height: 100vh;
+  width: 100%;
+  background-color: #D6CCCC;
+  color: #fff;
+}
+
+.card{
+  height: 55vh;
+  width: 30vw;
+  background-color: rgba(226, 149, 149, 0.009);
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  border: 2px solid #ffffffac;
+  margin: 3vh;
+  display: inline-block;
+}
+
+.card-bg{
+  position: absolute;
+  z-index: -1;
+  height: 90%;
+  width: 80%;
+  margin-top: 10%;
+  border-radius: 50%;
+  filter: blur(60px);
+  background: linear-gradient(to right,#e1b1ac, #c182bb, #b3488b, #ab555f, #c1908b);
+}
+
+.card .card-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.card .card-top .icon{
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  border: 1px solid #ffffffb2;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card-top .icon img{
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-top .top-right .save-btn{
+  padding: 1vh;
+  border: 1px solid #ffffffb2;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0000007b;
+}
+
+.card-center .center-top{
+  display: flex;
+  align-items: flex-end;
+  gap: 1vh;
+}
+
+.card-center .center-top .deadline{
+  color: #ffffff98;
+}
+
+.center-bottom .tags{
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  margin-top: 1vh;
+}
+
+.tags .tag{
+  padding: 1vh;
+  background-color: #ffffffb2;
+  border-radius: 10px;
+  color: #000;
+}
+
+.card-bottom{
+  border-top: 1px solid #ffffff74;
+  margin-top: 12vh;
+  padding: 3vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-bottom .bottom-left .pay{
+  color: #000000ea;
+}
+
+.card-bottom .bottom-left .city{
+  color: #ffffffcb;
+}
+
+.card-bottom .bottom-right .apply-btn{
+  background-color: #ffffff74;
+  padding: 1.5vh;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+}
