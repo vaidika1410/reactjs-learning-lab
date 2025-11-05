@@ -2,10 +2,10 @@ import React from 'react'
 import { ArrowUpRight  } from 'lucide-react';
 
 
-const middle = () => {
-  const capital = '115k'
-  const happyCustomers = '70k'
-  const options = '47k'
+const middle = (props) => {
+  // const capital = '115k'
+  // const happyCustomers = '70k'
+  // const options = '47k'
 
   return (
     <>
@@ -15,7 +15,14 @@ const middle = () => {
     </div>
     <div className='h-1/9 mt-6'>
         <ul className='flex justify-between text-4xl'>
-          <li>
+          {
+          props.data.map(function(elem){
+            return <li>
+              <h2>{elem.value}</h2>
+              <p className='text-xs'>{elem.tag}</p>
+            </li>
+          })
+          /* <li>
             {capital}+
             <p className='text-xs'>Capital Raised</p>
           </li>
@@ -26,7 +33,7 @@ const middle = () => {
           <li>
             {options}+
             <p className='text-xs'>Property Options</p>
-            </li>
+            </li> */}
         </ul>
     </div>
     </>
