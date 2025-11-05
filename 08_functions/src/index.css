@@ -1,0 +1,28 @@
+*{
+  margin: 5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: #111;
+  color: white;
+}
+
+.mouse-div{
+  height: 50vh;
+  width: 50vw;
+  background-color: crimson;
+}
+
+.container{
+  height: 80vh;
+  background-color: violet;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+.sub-container{
+  height: 50vh;
+  border: 3px solid #fff;
+}
