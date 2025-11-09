@@ -37,12 +37,14 @@ const App = () => {
       <div
             className='flex align-center justify-center gap-5 absolute bottom-8 left-1/2 -translate-x-1/2'
         >
-            <button onClick={() => {
+            <button 
+            style={{opacity : index == 1 ? 0.5 : 1}}
+            onClick={() => {
                 if (index > 1) {
                     setIndex(index - 1)
                     setData([])
                 }
-            }} className='p-4 px-8 rounded bg-blue-400 cursor-pointer'>
+            }} className='p-4 px-8 rounded bg-blue-400 cursor-pointer active:scale-95'>
                 Prev
             </button>
             <h1 className='mt-3.5'>
@@ -51,7 +53,7 @@ const App = () => {
             <button onClick={() => {
                 setData([])
                 setIndex(index + 1)
-            }} className='p-4 px-8 rounded bg-blue-400 cursor-pointer'>
+            }} className='p-4 px-8 rounded bg-blue-400 cursor-pointer active:scale-95'>
                 Next
             </button>
         </div>
