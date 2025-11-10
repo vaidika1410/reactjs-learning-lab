@@ -7,6 +7,8 @@ import Product from './pages/Product'
 import Men from './pages/Men'
 import Women from './pages/Women'
 import NotFound from './pages/NotFound.jsx'
+import Courses from './pages/Courses.jsx'
+import CourseDetails from './pages/CourseDetails.jsx'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
           <Route path='men' element={<Men />} />
           <Route path='women' element={<Women />} />
         </Route> 
+        <Route path='/courses' element={<Courses />} />
+        <Route path='/courses/:id' element={<CourseDetails />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
